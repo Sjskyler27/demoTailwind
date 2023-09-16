@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-white dark:bg-gray-800 text-black dark:text-white transition-all duration-500"
+  >
+    <header
+      class="bg-gradient-to-r dark:bg-gradient-to-l from-blue-400 to-blue-700 relative transition-all duration-500"
+    >
+      <label
+        for="dark-mode-toggle"
+        class="absolute top-0 right-0 mr-4 mt-4 cursor-pointer"
+      >
+        <input type="checkbox" id="dark-mode-toggle" class="hidden" />
+        <div class="w-14 h-8 bg-blue-300 dark:bg-blue-950 rounded-full p-1">
+          <div
+            id="toggle-circle"
+            class="w-6 h-6 bg-yellow-400 dark:bg-white rounded-full shadow-md transform translate-x-0 transition-transform duration-300"
+          ></div>
+        </div>
+      </label>
+      <div class="ml-3 text-left text-2xl bg-gradient-to-r dark:bg-gradient-to-l from-yellow-300 to-white bg-clip-text text-transparent transition-all duration-500  py-4 font-bold relative" style="max-width: 500px; overflow-x: auto;">
+        <h1>
+          <a href="#">
+            TailWind and TypeScript Example Items
+          </a>
+        </h1>
+      </div>
+            
+    </header>
+    <main class="text-center content-center">
+      <p class="text-lg font-bold content-center mx-96">
+        This project is an example project that contains verious different items
+        that I might be interested in using throughout the semester, wether it
+        be buttons, loading symbles, other animations or just p tags. they will
+        all give a one stop shop to come gather recources for a given project.
+      </p>
+      <br/>
+      <!-- note cards -->
+
+      <section>
+        <h2 class="text-xl font-semibold">Note Cards</h2>
+        <div class="mx-auto w-96 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-lg p-4">
+          <p class="text-gray-700 dark:text-gray-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
+          </p>
+        </div>
+      </section><br>
+      
+
+      <!-- Hyperlinks -->
+      <section class="">
+        <h2 class="text-xl font-semibold">Hyperlinks with Hover Effects</h2>
+        <ul>
+          <li>
+            <a
+              href="#"
+              class="text-blue-500 hover:underline hover:text-blue-700"
+              >Visit our website</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-blue-500 hover:underline hover:text-blue-700"
+              >Read our blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-blue-500 hover:underline hover:text-blue-700"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </section>
+      <br />
+
+      <!-- checkboxes -->
+      <section class="">
+        <h2 class="text-xl font-semibold">Checkboxes with Hover Effects</h2>
+        <div class="space-y-2">
+          <label class="items-center hover:text-blue-500 cursor-pointer">
+            <input type="checkbox" class="form-checkbox" /> Option 1 </label
+          ><br />
+          <label class="items-center hover:text-blue-500 cursor-pointer">
+            <input type="checkbox" class="form-checkbox" /> Option 2 </label
+          ><br />
+          <label class="items-center hover:text-blue-500 cursor-pointer">
+            <input type="checkbox" class="form-checkbox" /> Option 3
+          </label>
+        </div>
+      </section>
+      <br />
+
+      <!-- Buttons -->
+      <section>
+        <h2 class="text-xl font-semibold">Buttons with Hover Effects</h2>
+        <button id="popup-button" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+          Click Me
+        </button>
+
+        <button id="alert-button" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">
+          Don't Click Me
+        </button>
+
+        <!-- custom popup notification -->
+        <div id="popup-modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 items-center justify-center z-50 hidden">
+          <div class="bg-white dark:bg-gray-600 rounded-md p-4">
+            <p class="text-blue-500 text-center font-bold">Congratulations!</p>
+            <p class="text-center">You've clicked the button. You're doing great!</p>
+            <button id="close-modal" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-600">Close</button>
+          </div>
+        </div>
+
+      </section>
+      <br />
+
+      <!-- spinners -->
+      <section>
+        <h2 class="text-xl font-semibold">Spinners</h2>
+        <div id="loading-spinner" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 items-center justify-center z-50 hidden">
+          <div class="animate-spin rounded-full h-16 w-16 border-t-4 items-center justify-center border-blue-500 border-solid"></div>
+        </div>
+        </div>
+        <button
+          id="spinner-button"
+          class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+        >
+          Load Spinner
+        </button><br><br>
+        <div class="mx-auto w-6 h-6 border-t-2 border-blue-500 rounded-full animate-spin"></div>
+           
+      </section>
+      <br />
+
+
+    </main>
+    <footer class="border-t border-gray-300">
+      &copy: <span id="year"></span> Skyler Simpson
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
